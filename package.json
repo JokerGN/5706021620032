@@ -1,0 +1,27 @@
+{
+  "name": "5706021620032",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name='5706021620032' --interpreter babel-node",
+    "stop": "pm2 stop 5706021620032",
+    "logs": "pm2 logs 5706021620032",
+    "dev": "nodemon index.js --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "firebase": "^4.11.0",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "nodemon": "^1.14.11"
+  }
+}
